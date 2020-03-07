@@ -1351,6 +1351,17 @@ in
           '--description', '--on-event', and more.
         '';
       }
+
+      {
+        time = "2020-03-07T12:00:00+00:00";
+        condition = hostPlatform.isLinux;
+        message = ''
+          The NixOS integration module has a new option: 'home-manager.useGlobalPkgs'.
+          This enables using the system configuration's <literal>pkgs</literal> argument
+          in Home Manager.
+          To learn more, see the installation section of the manual.
+        '';
+      }
     ];
   };
 }
